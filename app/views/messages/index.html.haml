@@ -12,7 +12,7 @@
               = user.name  
       = link_to edit_group_path(@group) do
         .header__edit-btn
-        = link_to "Edit", edit_group_path(@group.id), class: 'btn'
+          = link_to "Edit", edit_group_path(@group.id), class: 'btn'
     .messages
       = render @messages
     .form
@@ -22,4 +22,4 @@
           = f.label        :image, class: 'input-box__image' do
             = fa_icon 'picture-o', class: 'icon'
             = f.file_field :image, class: 'input-box__image__file',type: 'file'
-        = f.submit 'Send',         class: 'submit-btn'
+          = f.submit 'Send',         class: 'submit-btn'
